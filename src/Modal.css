@@ -5,3 +5,15 @@
 .my-spinner {
     margin-bottom: 0;
 }
+
+.modal-header {
+    display: block !important;
+}
+
+.modal-header i {
+    font-size: 1.8rem;
+    padding: .8rem;
+    border-radius: .6rem;
+    color: #FFAC00;
+    background-color: rgba(226, 155, 13, 0.349);
+}
