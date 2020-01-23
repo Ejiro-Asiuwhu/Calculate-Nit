@@ -37,16 +37,22 @@ class Form extends Component {
 
 
     render() {
+        const numInput = {
+            display: 'block',
+            padding: '.6rem 1.8rem',
+            margin: '.6rem 0',
+
+        }
         return (
             <form onSubmit={this.handleSubmit}>
                 <Modal />
-                <label htmlFor="numOne">
+                <label htmlFor="numOne" style={numInput}>
                     <div>
                         First Number
                 </div>
                     <input type="number" value={this.state.numOne} onChange={this.handleChange} id="numOne" name="numOne" />
                 </label>
-                <label htmlFor="numTwo">
+                <label htmlFor="numTwo" style={numInput}>
                     <div>
                         Second Number {Number(this.state.numOne) + Number(this.state.numTwo)}
                     </div>

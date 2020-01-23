@@ -30,18 +30,24 @@ export class Modal extends Component {
     render() {
         const btnStyle = {
             color: '#E3F2FD',
-            backgroundColor: '#14868c'
+            backgroundColor: '#14868c',
+            padding: '.6rem 1.8rem',
+            margin: '.6rem 0',
         }
-            const nameInput = {
-                padding: '.4rem 1.6rem',
-                border: '1px solid #000'
-}
+        const nameInput = {
+            padding: '.4rem 1.6rem',
+            border: '1px solid #000'
+        }
+
+        const h2 = {
+            fontWeight: 700,
+        }
         return (
             <div>
 
-                <h2>
-                    Hello Howdy <span role="img" aria-label="emoji">🐱‍👤</span> 
-</h2>
+                <h2 style={h2}>
+                    Hello Howdy <span role="img" aria-label="emoji">🐱‍👤</span>
+                </h2>
                 <div className="spinner-grow text-primary" role="status">
                     <span className="sr-only">Loading...</span>
                 </div>
