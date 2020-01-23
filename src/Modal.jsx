@@ -119,7 +119,7 @@ export class Modal extends Component {
                                 </button>
                             </div>
                             <div className="modal-body">
-                                <h3>Welcome {this.state.userName + ' 😎'}, let's calculate some shit! </h3>
+                                <h3>Welcome <strong>{this.state.userName + ' 😎'}</strong>, let's calculate some shit! </h3>
                             </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn" style={modalBtn} data-dismiss="modal">Close</button>

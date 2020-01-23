@@ -40,7 +40,7 @@ class Form extends Component {
         const numInput = {
             display: 'block',
             margin: '.6rem 0',
-            padding: '.4rem .2rem .4rem 1.6rem',
+            padding: '.4rem .2rem .4rem 3rem',
             border: '1px solid #000',
             fontWeight: 'inherit',
 
