@@ -61,7 +61,7 @@ class Form extends Component {
             width: '20rem',
             margin: '0 auto',
             padding: '2rem 1rem',
-            borderRadius: '.8rem',
+            borderRadius: '1.4rem',
             boxShadow: '0px 5px 8px -1px rgba(0,0,0,0.51)',
         }
         return (
@@ -79,7 +79,7 @@ class Form extends Component {
                     </div>
                     <input type="number" value={this.state.numTwo} onChange={this.handleChange} id="numTwo" name="numTwo" />
                 </label>
-                <button onClick={this.addNum}  class="btn" type="button" style={btnStyle}>Click to add</button>
+                <button onClick={this.addNum}  className="btn" type="button" style={btnStyle}>Click to add</button>
             </form>
         )
     }

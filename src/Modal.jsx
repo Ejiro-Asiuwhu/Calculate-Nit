@@ -42,10 +42,18 @@ export class Modal extends Component {
         }
 
         const h2 = {
-            fontWeight: 400,
-            color: '#fff'
+            fontWeight: 600,
+            fontSize: '1.2rem',
+            textTransform: 'uppercase',
+            color: '#fff',
         }
 
+        const h3 = {
+            fontWeight: 800,
+            fontSize: '1.5rem',
+            textTransform: 'uppercase',
+            color: '#000',
+        }
         const marginLeft = {
             marginLeft: '.5rem',
         }
@@ -54,6 +62,9 @@ export class Modal extends Component {
 
                 <h2 style={h2}>
                     Hello Howdy <span role="img" aria-label="emoji">🐱‍👤</span>
+                </h2>
+                 <h2 style={h3}>
+                   Let's add some shit!
                 </h2>
                 <div className="spinner-grow text-primary" role="status">
                     <span className="sr-only">Loading...</span>
