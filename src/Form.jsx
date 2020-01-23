@@ -45,13 +45,11 @@ class Form extends Component {
         }
 
         const btnStyle = {
-            color: '#E3F2FD',
-            backgroundColor: '#14868c',
-            padding: '.6rem 1.8rem',
+           color: '#fff',
+            backgroundColor: '#000',
+            padding: '.5rem 2rem',
             margin: '.6rem 0',
-            outline: '1px solid lightBlue',
-            border: 'none'
-
+            borderRadius: 0,
         }
 
         const formStyle = {
@@ -81,7 +79,7 @@ class Form extends Component {
                     </div>
                     <input type="number" value={this.state.numTwo} onChange={this.handleChange} id="numTwo" name="numTwo" />
                 </label>
-                <button onClick={this.addNum} type="submit" style={btnStyle}>Click to add</button>
+                <button onClick={this.addNum}  class="btn" type="button" style={btnStyle}>Click to add</button>
             </form>
         )
     }

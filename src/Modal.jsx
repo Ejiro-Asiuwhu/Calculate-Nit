@@ -29,10 +29,12 @@ export class Modal extends Component {
 
     render() {
         const btnStyle = {
-            color: '#E3F2FD',
-            backgroundColor: '#14868c',
-            padding: '.6rem 1.8rem',
+            color: '#fff',
+            backgroundColor: '#000',
+            padding: '.5rem 2rem',
             margin: '.6rem 0',
+            borderRadius: 0,
+
         }
         const nameInput = {
             padding: '.4rem 1.6rem',
@@ -42,6 +44,10 @@ export class Modal extends Component {
         const h2 = {
             fontWeight: 400,
             color: '#fff'
+        }
+
+        const marginLeft = {
+            marginLeft: '.5rem',
         }
         return (
             <div>
@@ -81,7 +87,8 @@ export class Modal extends Component {
                 </div>
                 <button onClick={this.state.userName} type="button" className="btn" data-toggle="modal"
                     data-target="#exampleModal" style={btnStyle}>
-                    <span className="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span> Click here
+                        Click here
+                    <span className="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" style={marginLeft}></span> 
                 </button>
                 <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
