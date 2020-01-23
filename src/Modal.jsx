@@ -58,6 +58,15 @@ export class Modal extends Component {
         const marginLeft = {
             marginLeft: '.5rem',
         }
+
+        const modalBtn = {
+                color: '#fff',
+            backgroundColor: '#DE2949',
+            padding: '.5rem 2rem',
+            margin: '2rem 0 2rem 0',
+            borderRadius: 0,
+            fontWeight: 'inherit', 
+        }
         return (
             <div>
 
@@ -116,7 +125,7 @@ export class Modal extends Component {
                                 <h3>Welcome {this.state.userName + ' 😎'}, let's calculate some shit! </h3>
                             </div>
                             <div className="modal-footer">
-                                <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" className="btn" style={modalBtn} data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
