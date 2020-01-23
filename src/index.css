@@ -1,8 +1,17 @@
 body {
-   background-color: #F1E4C6 !important;
-  margin: 0;
+  background-color: #F1E4C6 !important;
+  margin: 0 auto !important;
   font-family: 'Open Sans',
-  sans-serif !important;
+    sans-serif !important;
   padding: 2rem;
   font-weight: 600 !important;
+}
+
+@media screen and (max-width: 377px) {
+  body {
+    padding: .5rem;
+  }
+  form {
+    width: 17rem;
+  }
 }

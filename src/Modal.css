@@ -29,3 +29,10 @@
     border-top: 1px solid #DE2949 !important;
 
 }
+
+@media screen and (max-width: 377px) {
+
+    form {
+        width: 17rem !important;
+    }
+}

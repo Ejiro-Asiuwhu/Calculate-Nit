@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import Modal from './Modal';
-
+import './Modal.css';
 class Form extends Component {
     constructor(props) {
         super(props);
