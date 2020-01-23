@@ -40,7 +40,8 @@ export class Modal extends Component {
         }
 
         const h2 = {
-            fontWeight: 700,
+            fontWeight: 400,
+            color: '#fff'
         }
         return (
             <div>

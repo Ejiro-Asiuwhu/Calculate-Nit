@@ -63,7 +63,7 @@ class Form extends Component {
             width: '20rem',
             margin: '0 auto',
             padding: '2rem 1rem',
-            borderRadius: '.4rem',
+            borderRadius: '.8rem',
             boxShadow: '0px 5px 8px -1px rgba(0,0,0,0.51)',
         }
         return (
