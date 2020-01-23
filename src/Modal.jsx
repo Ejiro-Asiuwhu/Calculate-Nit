@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import './Modal.css'
 
 export class Modal extends Component {
     constructor(props) {
@@ -99,7 +99,7 @@ export class Modal extends Component {
                 <button onClick={this.state.userName} type="button" className="btn" data-toggle="modal"
                     data-target="#exampleModal" style={btnStyle}>
                         Click here
-                    <span className="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" style={marginLeft}></span> 
+                    <span className="spinner-grow my-spinner spinner-grow-sm" role="status" aria-hidden="true" style={marginLeft}></span> 
                 </button>
                 <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
