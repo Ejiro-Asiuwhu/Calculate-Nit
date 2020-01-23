@@ -39,12 +39,35 @@ class Form extends Component {
     render() {
         const numInput = {
             display: 'block',
-            padding: '.6rem 1.8rem',
+            padding: '0 1.8rem',
             margin: '.6rem 0',
 
         }
+
+        const btnStyle = {
+            color: '#E3F2FD',
+            backgroundColor: '#14868c',
+            padding: '.6rem 1.8rem',
+            margin: '.6rem 0',
+            outline: '1px solid lightBlue',
+            border: 'none'
+
+        }
+
+        const formStyle = {
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            background: '#FFAC00',
+            width: '20rem',
+            margin: '0 auto',
+            padding: '2rem 1rem',
+            borderRadius: '.4rem',
+            boxShadow: '0px 5px 8px -1px rgba(0,0,0,0.51)',
+        }
         return (
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit} style={formStyle}>
                 <Modal />
                 <label htmlFor="numOne" style={numInput}>
                     <div>
@@ -58,7 +81,7 @@ class Form extends Component {
                     </div>
                     <input type="number" value={this.state.numTwo} onChange={this.handleChange} id="numTwo" name="numTwo" />
                 </label>
-                <button onClick={this.addNum} type="submit">Click to add</button>
+                <button onClick={this.addNum} type="submit" style={btnStyle}>Click to add</button>
             </form>
         )
     }

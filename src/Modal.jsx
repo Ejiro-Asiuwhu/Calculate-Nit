@@ -80,7 +80,7 @@ export class Modal extends Component {
                 </div>
                 <button onClick={this.state.userName} type="button" className="btn" data-toggle="modal"
                     data-target="#exampleModal" style={btnStyle}>
-                    <span className="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span> click here
+                    <span className="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span> Click here
                 </button>
                 <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
