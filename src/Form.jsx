@@ -41,7 +41,9 @@ class Form extends Component {
             display: 'block',
             margin: '.6rem 0',
             padding: '.4rem .2rem .4rem 1.6rem',
-            border: '1px solid #000'
+            border: '1px solid #000',
+            fontWeight: 'inherit',
+
         }
 
         const btnStyle = {
@@ -50,6 +52,7 @@ class Form extends Component {
             padding: '.5rem 2rem',
             margin: '.6rem 0',
             borderRadius: 0,
+            fontWeight: 'inherit',
         }
 
         const formStyle = {
