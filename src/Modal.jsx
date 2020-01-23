@@ -63,7 +63,7 @@ export class Modal extends Component {
                 color: '#fff',
             backgroundColor: '#DE2949',
             padding: '.5rem 2rem',
-            margin: '2rem 0 2rem 0',
+            margin: '2rem 0 1rem 0',
             borderRadius: 0,
             fontWeight: 'inherit', 
         }
@@ -116,7 +116,7 @@ export class Modal extends Component {
                     <div className="modal-dialog" role="document">
                         <div className="modal-content">
                             <div className="modal-header">
-                                <span> <i class="fas fa-door-open"></i> </span>
+                                <span> <i className="fas  fa-user"></i> </span>
                                 <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>

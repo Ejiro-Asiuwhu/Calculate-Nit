@@ -73,17 +73,17 @@ class Form extends Component {
             <form onSubmit={this.handleSubmit} style={formStyle}>
                 <Modal />
                 <label htmlFor="numOne" >
-                    <div>
-                        First Number
-                </div>
-                    <input type="number" style={numInput} value={this.state.numOne} onChange={this.handleChange} id="numOne" name="numOne" />
+                    <input type="number" style={numInput} value={this.state.numOne} onChange={this.handleChange} id="numOne" placeholder="Enter number" name="numOne" />
                 </label>
                 <label htmlFor="numTwo" >
-                    <div>
-                        Second Number {Number(this.state.numOne) + Number(this.state.numTwo)}
-                    </div>
-                    <input type="number" style={numInput} value={this.state.numTwo} onChange={this.handleChange} id="numTwo" name="numTwo" />
+                    <input type="number" style={numInput} value={this.state.numTwo} onChange={this.handleChange} id="numTwo" placeholder="Enter number" name="numTwo" />
                 </label>
+                <div>
+                    <label htmlFor="sum">
+                        Sum: {`${this.state.numOne} + ${this.state.numTwo} equals ${Number(this.state.numOne) + Number(this.state.numTwo)}`}
+
+                    </label>
+                </div>
                 <button onClick={this.addNum}  className="btn" type="button" style={btnStyle}>Click to add</button>
             </form>
         )
