@@ -7,7 +7,7 @@ class Form extends Component {
         this.state = {
             userName: '',
             numOne: '',
-            numTwo: ''
+            numTwo: '',
         };
 
         this.handleChange = this.handleChange.bind(this);
