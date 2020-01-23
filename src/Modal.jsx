@@ -32,7 +32,7 @@ export class Modal extends Component {
             color: '#fff',
             backgroundColor: '#000',
             padding: '.5rem 2rem',
-            margin: '.6rem 0',
+            margin: '.5rem 0 2.4rem 0',
             borderRadius: 0,
             fontWeight: 'inherit',
         }
