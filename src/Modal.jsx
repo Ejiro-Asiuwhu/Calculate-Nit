@@ -9,7 +9,6 @@ export class Modal extends Component {
         };
 
         this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
 
@@ -20,12 +19,6 @@ export class Modal extends Component {
         this.setState({ [name]: value });
         console.log(`${name} element was clicked and this is the value ${value}`)
     }
-
-    handleSubmit(event) {
-        alert(`Welcome ${this.state.userName}`)
-        event.preventDefault();
-    }
-
 
     render() {
         const btnStyle = {
@@ -103,7 +96,7 @@ export class Modal extends Component {
                             placeholder="Enter your name..." />
                     </label>
                 </div>
-                <button onClick={this.state.userName} type="button" className="btn" data-toggle="modal"
+                <button  type="button" className="btn" data-toggle="modal"
                     data-target="#exampleModal" style={btnStyle}>
                         Click here
                     <span className="spinner-grow my-spinner spinner-grow-sm" role="status" aria-hidden="true" style={marginLeft}></span> 
