@@ -9,6 +9,7 @@ export class Modal extends Component {
         };
 
         this.handleChange = this.handleChange.bind(this);
+        this.handleName = this.handleName.bind(this);
     }
 
 
@@ -18,6 +19,10 @@ export class Modal extends Component {
         const name = target.name;
         this.setState({ [name]: value });
         console.log(`${name} element was clicked and this is the value ${value}`)
+    }
+
+    handleName() {
+        this.setState({ userName: '' });
     }
 
     render() {
@@ -53,12 +58,12 @@ export class Modal extends Component {
         }
 
         const modalBtn = {
-                color: '#fff',
+            color: '#fff',
             backgroundColor: '#DE2949',
             padding: '.5rem 2rem',
             margin: '2rem 0 1rem 0',
             borderRadius: 0,
-            fontWeight: 'inherit', 
+            fontWeight: 'inherit',
         }
         return (
             <div>
@@ -66,8 +71,8 @@ export class Modal extends Component {
                 <h2 style={h2}>
                     Hello Howdy <span role="img" aria-label="emoji">🐱‍👤</span>
                 </h2>
-                 <h2 style={h3}>
-                   Let's add some shit!
+                <h2 style={h3}>
+                    Let's add some shit!
                 </h2>
                 <div className="spinner-grow text-primary" role="status">
                     <span className="sr-only">Loading...</span>
@@ -96,10 +101,10 @@ export class Modal extends Component {
                             placeholder="Enter your name..." />
                     </label>
                 </div>
-                <button  type="button" className="btn" data-toggle="modal"
+                <button onClick={this.handleName} type="button" className="btn" data-toggle="modal"
                     data-target="#exampleModal" style={btnStyle}>
-                        Click here
-                    <span className="spinner-grow my-spinner spinner-grow-sm" role="status" aria-hidden="true" style={marginLeft}></span> 
+                    Click here
+                    <span className="spinner-grow my-spinner spinner-grow-sm" role="status" aria-hidden="true" style={marginLeft}></span>
                 </button>
                 <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
