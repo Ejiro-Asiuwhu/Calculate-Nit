@@ -37,42 +37,42 @@ class Form extends Component {
 
 
     render() {
-        const numInput = {
-            display: 'block',
-            margin: '.6rem 0',
-            padding: '.4rem .2rem .4rem 3rem',
-            border: '1px solid #000',
-            fontWeight: 'inherit',
+        // const numInput = {
+        //     display: 'block',
+        //     margin: '.6rem 0',
+        //     padding: '.4rem .2rem .4rem 3rem',
+        //     border: '1px solid #000',
+        //     fontWeight: 'inherit',
 
-        }
+        // }
 
-        const btnStyle = {
-           color: '#fff',
-            backgroundColor: '#000',
-            padding: '.5rem 2rem',
-            margin: '.6rem 0',
-            borderRadius: 0,
-            fontWeight: 'inherit',
-        }
+        // const btnStyle = {
+        //    color: '#fff',
+        //     backgroundColor: '#000',
+        //     padding: '.5rem 2rem',
+        //     margin: '.6rem 0',
+        //     borderRadius: 0,
+        //     fontWeight: 'inherit',
+        // }
 
         const formStyle = {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-            background: '#FFAC00',
-            width: '20rem',
+            // background: '#FFAC00',
+            // width: '20rem',
             margin: '0 auto',
-            padding: '2rem 1rem',
-            borderRadius: '1.4rem',
-            boxShadow: '0px 5px 8px -1px rgba(0,0,0,0.51)',
+            padding: '1rem 0',
+            // borderRadius: '1.4rem',
+            // boxShadow: '0px 5px 8px -1px rgba(0,0,0,0.51)',
         }
 
 
         return (
             <form onSubmit={this.handleSubmit} style={formStyle}>
                 <Modal />
-                <label htmlFor="numOne" >
+                {/* <label htmlFor="numOne" >
                     <input type="number" style={numInput} value={this.state.numOne} onChange={this.handleChange} id="numOne" placeholder="Enter number" name="numOne" />
                 </label>
                 <label htmlFor="numTwo" >
@@ -84,7 +84,7 @@ class Form extends Component {
 
                     </label>
                 </div>
-                <button onClick={this.addNum}  className="btn" type="button" style={btnStyle}>Click to add</button>
+                <button onClick={this.addNum}  className="btn" type="button" style={btnStyle}>Click to add</button> */}
             </form>
         )
     }

@@ -33,13 +33,14 @@ export class Modal extends Component {
             padding: '.4rem 1.6rem',
             border: '1px solid #000',
             fontWeight: 'inherit',
+            width: '100%'
         }
 
         const h2 = {
-            fontWeight: 600,
-            fontSize: '1.2rem',
+            fontWeight: 800,
+            fontSize: '2rem',
             textTransform: 'uppercase',
-            color: '#fff',
+            color: '#FFAC00',
         }
 
         const h3 = {
@@ -53,22 +54,33 @@ export class Modal extends Component {
         }
 
         const modalBtn = {
-                color: '#fff',
+            color: '#fff',
             backgroundColor: '#DE2949',
             padding: '.5rem 2rem',
             margin: '2rem 0 1rem 0',
             borderRadius: 0,
             fontWeight: 'inherit', 
         }
-        return (
-            <div>
 
+        const Modal = {
+            display: 'flex',
+            flexDirection: 'column',
+            width: '22rem',
+        }
+
+        const spinner = {
+            display: 'flex',
+            margin: '1rem 0'
+        }
+        return (
+            <div style={Modal}>
                 <h2 style={h2}>
                     Hello Howdy <span role="img" aria-label="emoji">🐱‍👤</span>
                 </h2>
                  <h2 style={h3}>
-                   Let's add some shit!
+                   Let's Calculate some shit!
                 </h2>
+                <div style={spinner}>
                 <div className="spinner-grow text-primary" role="status">
                     <span className="sr-only">Loading...</span>
                 </div>
@@ -89,9 +101,10 @@ export class Modal extends Component {
                 </div>
                 <div className="spinner-grow text-light" role="status">
                     <span className="sr-only">Loading...</span>
-                </div>
+                    </div>
+                    </div>
                 <div>
-                    <label htmlFor="userName">
+                    <label style={{width: '100%'}} htmlFor="userName">
                         <input style={nameInput} autoFocus type="text" value={this.state.userName} onChange={this.handleChange} id="userName" name="userName"
                             placeholder="Enter your name..." />
                     </label>
